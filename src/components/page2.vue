@@ -86,7 +86,7 @@ export default {
         meetContent: '',
         region: '',
         room: '',
-        date1: '',
+        date1: Date.now(),
         startTime: '',
         endTime: ''
       },
@@ -95,14 +95,13 @@ export default {
           let curDate = (new Date()).getTime()
           let three = 7 * 24 * 3600 * 1000
           let threeMonths = curDate + three
-          return time.getTime() < Date.now() || time.getTime() > threeMonths
+          return time.getTime() < Date.now() - 8.64e7 || time.getTime() > threeMonths
         }
       }
 
     }
   },
   created () {
-    this.form.date1 = Date.now()
   },
   mounted () {
     this.getData()

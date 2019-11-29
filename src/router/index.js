@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Page1 from '@/components/page1'
-import PageOne from '@/components/page1-1'
+import ppps from '@/components/page1-1'
 import Page2 from '@/components/page2'
 
 import ElementUI from 'element-ui'
@@ -30,8 +30,8 @@ export default new Router({
       children: [
         {
           path: '/page1/page1-1',
-          name: 'page1-1',
-          component: PageOne
+          name: 'ppps',
+          component: ppps
         }
       ]
     },
