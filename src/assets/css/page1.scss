@@ -1,0 +1,58 @@
+.con_page1{
+  [class*='el-col-']{
+    padding: 10px 0;
+    &.active {
+      background: #74a937;
+      padding: 10px 0;
+    }
+  }
+
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.con {
+  padding: 0 20PX;
+}
+.el-select {
+  display: block;
+}
+.el-form-item__label {
+  text-align: center;
+}
+.el-table {
+  .warning-row {
+    background: oldlace;
+  }
+  .success-row {
+    background: #f0f9eb;
+  }
+}
+.el-form-item {
+  margin-bottom: 10px;
+}
+.state_b {
+  margin-top: 30px;
+  font-size: 32px;
+}
+.table_row {
+  border-bottom: 1PX solid #fff;
+  &:nth-child(odd) {
+    background: #c7c7c7;
+  }
+  &:nth-child(even) {
+    background: #e7ebee;
+  }
+  .state {
+    border-left: 1px solid #fff;
+  }
+}
+/* 偶数行 */
+/* 奇数行 */
+.table_left {
+  border-right: 4px solid #fff;
+}
+.table_right {
+  border-left: 4px solid #fff;
+}

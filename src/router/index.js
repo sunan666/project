@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Page1 from '@/components/page1'
-import ppps from '@/components/page1-1'
-import Page2 from '@/components/page2'
+// import HelloWorld from '@/pages/HelloWorld'
+import Page1 from '@/pages/page1'
+import detail from '@/pages/detail'
+import Page2 from '@/pages/page2'
+
+// 测试子集路由
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -18,27 +20,23 @@ Vue.use(MintUI)
 export default new Router({
   mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
+    // 首页筛选
     {
       path: '/page1',
       name: 'page1',
-      component: Page1,
-      children: [
-        {
-          path: '/page1/page1-1',
-          name: 'ppps',
-          component: ppps
-        }
-      ]
+      component: Page1
     },
+    // 预约
     {
       path: '/page2',
       name: 'page2',
       component: Page2
+    },
+    // 详情
+    {
+      path: '/page1/detail',
+      name: 'detail',
+      component: detail
     }
   ]
 })
